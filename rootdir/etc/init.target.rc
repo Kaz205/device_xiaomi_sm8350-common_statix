@@ -111,6 +111,9 @@ on post-fs-data
     mkdir /data/vendor/goodix 0770 system system
     mkdir /mnt/vendor/persist/goodix 0770 system system
 
+    # Enable idle state listener
+    write /sys/class/drm/card0/device/idle_encoder_mask 2
+
 on early-boot
     # Enable WLAN cold boot calibration
     write /sys/devices/platform/soc/b0000000.qcom,cnss-qca6490/fs_ready 1
