@@ -1,3 +1,6 @@
+# Art
+ro.dalvik.vm.enable_uffd_gc=true
+
 # App
 ro.launcher.blur.appLaunch=0
 
